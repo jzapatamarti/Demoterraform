@@ -58,7 +58,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     
-  env:
+    env:
       TERRAFORM_JZMARTI_CLIENT_ID: ${{ secrets.TERRAFORM_JZMARTI_CLIENT_ID }}
       TERRAFORM_JZMARTI_CLIENT_SECRET: ${{ secrets.TERRAFORM_JZMARTI_CLIENT_SECRET }}
       TERRAFORM_JZMARTI_SUBSCRIPTION_ID: ${{ secrets.TERRAFORM_JZMARTI_SUBSCRIPTION_ID }}
