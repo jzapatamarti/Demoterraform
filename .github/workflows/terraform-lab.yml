@@ -58,6 +58,15 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
 
+    env:
+      TERRAFORM_JZMARTI_CLIENT_ID: ${{ secrets.TERRAFORM_JZMARTI_CLIENT_ID }}
+      TERRAFORM_JZMARTI_CLIENT_SECRET: ${{ secrets.TERRAFORM_JZMARTI_CLIENT_SECRET }}
+      TERRAFORM_JZMARTI_SUBSCRIPTION_ID: ${{ secrets.TERRAFORM_JZMARTI_SUBSCRIPTION_ID }}
+      TERRAFORM_JZMARTI_TENANT_ID: ${{ secrets.TERRAFORM_JZMARTI_TENANT_ID }}
+
+
+    
+
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
       run:
