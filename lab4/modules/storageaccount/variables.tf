@@ -12,3 +12,4 @@ variable "locationst" {
   type        = string
   description = "The location for the deployment"
 }
+

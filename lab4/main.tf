@@ -12,11 +12,6 @@ provider "azurerm" {
   features {}
 }
 
-resource "random_string" "random" {
-  length  = 16
-  special = true
-}
-
 module "resourcegroup" {
   source    = "./modules/resourcegroup"
   base_name = var.rootvarrgname

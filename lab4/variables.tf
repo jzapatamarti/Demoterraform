@@ -1,6 +1,6 @@
 variable "rootvarrgname" {
   type        = string
-  default     = "tfexa01-${random_string.random.result}"
+  default     = "tfexa01jzmarti"
   description = "Rg Name"
 }
 
@@ -12,6 +12,7 @@ variable "rootvarlocation" {
 
 variable "rootvarstname" {
   type        = string
-  default     = "sttfexa01-${random_string.random.result}"
+  default     = "sttfexa01jzmarti"
   description = "Storage Account Name"
 }
+
