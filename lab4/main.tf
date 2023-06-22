@@ -5,6 +5,14 @@ terraform {
       version = "=2.46.0"
     }
   }
+    backend "azurerm" {
+        resource_group_name  = "tfstatejz9671"
+        storage_account_name = "tfstatejz28152"
+        container_name       = "tfstatejz4714"
+        key                  = "terraform.tfstate"
+        access_key           = "5WJDar/QCSpzsGtAVzubBp2eXeNGYStL6+tfBvt1C3SadZ714pLK2yZHEvMtxQTqKSl2y6YZoAXr+AStyyS5Qg=="
+    }
+
 
 }
 
